@@ -1,0 +1,67 @@
+<p>add-user works!</p>
+<div class="content-wrapper">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="mb-0"> Form Input</h4>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right ">
+                    <li class="breadcrumb-item"><a href="#" class="default-color">Home</a></li>
+                    <li class="breadcrumb-item active">Form Input</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12 mb-30">
+            <div class="card card-statistics mb-30">
+                <div class="card-body">
+                    <h5 class="card-title">Basic form</h5>
+                    <form [formGroup]="userForm" >
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="user" formControlName="name" class="form-control" id="name"  placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="user" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp"  class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" formControlName="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password_confirmation">Password</label>
+                            <input type="password" formControlName="password_confirmation" class="form-control" id="confirmPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <input type="text" formControlName="role" class="form-control" id="role"  value="1" >
+                        </div> 
+                        <div class="form-group">
+                            <label for="avatar">Avatar</label>
+                            <input type="text" formControlName="avatar" class="form-control" id="avatar"   >
+                        </div> 
+              
+                        <label for ="selected" type="button" >Select Photo</label>
+                        <div>
+                            <p>{{photoName?photoName:userForm.value.photoName }}</p>
+                        </div>
+                        <div>
+                            <img src="url? url:userForm.value.avatar" alt="">
+                        </div>
+                        <input (change)="selecedPhoto($event)" type="file" id="selected" hidden>
+                        <button type="submit" (click)="addUser()" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+ 
+    </div>
+    <!--=================================
+wrapper -->
+ 
+</div>

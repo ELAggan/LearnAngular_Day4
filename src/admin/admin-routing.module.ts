@@ -6,7 +6,7 @@ import { dashboardGuard } from 'src/core/dashboard.guard';
 
 const routes: Routes = [
   {path:'',component:NavbarComponent,
-  canActivateChild:[dashboardGuard],
+  canActivateChild:[  ],
   children:[
     {path:'user', loadChildren:() => import('..//admin//users//users.module').then(m=>m.UsersModule)}
   ]

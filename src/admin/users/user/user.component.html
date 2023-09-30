@@ -44,264 +44,45 @@
                             </div>
                            </div>
                          </div>
+                         <div><button (click)="openDialog()">Add User</button></div>
                          <div class="table-responsive mt-15">
                           <table class="table center-aligned-table mb-0">
                             <thead>
-                              <tr class="text-dark">
-                                <th>Order No</th>
-                                <th>Product Name</th>
-                                <th>Purchased On</th>
-                                <th>Shipping Status</th>
-                                <th>Payment Method</th>
-                                <th>Payment Status</th>
-                                <th></th>
-                                <th></th>
+                              <tr  class="text-dark">
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>  
+                                <th>Avatar</th> 
+                                <th>Edit</th>   
+                                <th>DELETE</th>  
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr>
-                                <td>034</td>
-                                <td>Iphone 7</td>
-                                <td>12 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>035</td>
-                                <td>Galaxy S8</td>
-                                <td>15 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Internet banking</td>
-                                <td><label class="badge badge-warning">Pending</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>036</td>
-                                <td>Amazon Echo</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>037</td>
-                                <td>Google Pixel</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Cash on delivery</td>
-                                <td><label class="badge badge-danger">Rejected</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                                <tr>
-                                <td>038</td>
-                                <td>Mac Mini</td>
-                                <td>19 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Debit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>035</td>
-                                <td>Galaxy S8</td>
-                                <td>15 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Internet banking</td>
-                                <td><label class="badge badge-warning">Pending</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>034</td>
-                                <td>Iphone 7</td>
-                                <td>12 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>035</td>
-                                <td>Galaxy S8</td>
-                                <td>15 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Internet banking</td>
-                                <td><label class="badge badge-warning">Pending</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>036</td>
-                                <td>Amazon Echo</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>037</td>
-                                <td>Google Pixel</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Cash on delivery</td>
-                                <td><label class="badge badge-danger">Rejected</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>038</td>
-                                <td>Mac Mini</td>
-                                <td>19 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Debit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>036</td>
-                                <td>Amazon Echo</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>034</td>
-                                <td>Iphone 7</td>
-                                <td>12 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                        <tr>
-                                <td>035</td>
-                                <td>Galaxy S8</td>
-                                <td>15 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Internet banking</td>
-                                <td><label class="badge badge-warning">Pending</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-              <tr>
-                                <td>036</td>
-                                <td>Amazon Echo</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-              <tr>
-                                <td>037</td>
-                                <td>Google Pixel</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Cash on delivery</td>
-                                <td><label class="badge badge-danger">Rejected</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-              <tr>
-                                <td>038</td>
-                                <td>Mac Mini</td>
-                                <td>19 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Debit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>037</td>
-                                <td>Google Pixel</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Cash on delivery</td>
-                                <td><label class="badge badge-danger">Rejected</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>034</td>
-                                <td>Iphone 7</td>
-                                <td>12 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                                <tr>
-                                <td>035</td>
-                                <td>Galaxy S8</td>
-                                <td>15 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Internet banking</td>
-                                <td><label class="badge badge-warning">Pending</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>036</td>
-                                <td>Amazon Echo</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Credit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                                <tr>
-                                <td>037</td>
-                                <td>Google Pixel</td>
-                                <td>17 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Cash on delivery</td>
-                                <td><label class="badge badge-danger">Rejected</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>038</td>
-                                <td>Mac Mini</td>
-                                <td>19 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Debit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                              <tr>
-                                <td>038</td>
-                                <td>Mac Mini</td>
-                                <td>19 May 2017</td>
-                                <td>Dispatched</td>
-                                <td>Debit card</td>
-                                <td><label class="badge badge-success">Approved</label></td>
-                                <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
-                                <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
-                              </tr>
-                               
+                            <tbody  >
+                              <tr *ngFor="let u of users | paginate: { id: 'foo',
+                              itemsPerPage: 1,
+                              currentPage: 1,
+                              totalItems: 10 };let i=index " >
+                                <th>{{i+1}}</th>
+                                <th>{{u.name}}</th>
+                                <th>{{u.email}}</th>
+                                <th>{{u.status}}</th>
+                                <th><img style="width: 50px;" [src]="u.avatar"></th>    
+                            <th><button (click)="edit(u)"></button> </th>  
+                            <th><button (click)="delete(u.id)"></button> </th>  
+                               </tr>
                             </tbody>
                           </table>
+                          <pagination-controls  id="foo"
+                      (pageChange)="nav($event)"
+                      (pageBoundsCorrection)="nav($event)"
+                      
+                      previousLabel="Previous"
+                      nextLabel="Next"
+                      screenReaderPaginationLabel="Pagination"
+                      screenReaderPageLabel="page"
+                      screenReaderCurrentLabel="You're on page">
+</pagination-controls>
                         </div>
                       </div>
                     </div>   

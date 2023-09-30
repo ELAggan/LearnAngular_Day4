@@ -4,7 +4,8 @@ import { LoginComponent } from './login/login/login.component';
 import { adminGuard } from 'src/core/admin.guard';
 
 const routes: Routes = [
-  {path:'login',component:LoginComponent,
+  {
+    path:'login',component:LoginComponent,
   canActivateChild:[adminGuard] 
 
 }

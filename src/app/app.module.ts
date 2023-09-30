@@ -8,10 +8,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginModule } from 'src/auth/login/login.module';
 import { CoreModule } from 'src/core/core.module';
 import { InterceptorModule } from 'src/interceptor/interceptor.module';
- 
+import { LoginModule } from 'src/auth/login/login.module';
+import { AddUserModule } from 'src/admin/add-user/add-user.module';
+
 
 @NgModule({
   declarations: [
@@ -21,14 +22,20 @@ import { InterceptorModule } from 'src/interceptor/interceptor.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+  
+
  
-    HttpClientModule,
- 
-    ToastrModule.forRoot()
-    , HttpClientModule,
-     LoginModule,
+    ToastrModule.forRoot(),
+
      CoreModule  ,
-     InterceptorModule
+     InterceptorModule,
+     LoginModule,
+     AddUserModule
+     
+     
+  ],
+  exports:[
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

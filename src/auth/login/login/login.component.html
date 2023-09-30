@@ -26,23 +26,21 @@
               </ul>
              </div> 
            </div>
-           <div class="col-lg-4 col-md-6 bg-white">
-            <div [formGroup]="loginForm" class="login-fancy pb-40 clearfix">
+           <div [formGroup]="loginForm" class="col-lg-4 col-md-6 bg-white">
+            <div  class="login-fancy pb-40 clearfix">
             <h3 class="mb-30">Sign In To Admin</h3>
-             <div class="section-field mb-20">
+             <div  class="section-field mb-20">
                  <label class="mb-10" for="name">Email * </label>
-                   <input formControlName="email" id="name" class="web form-control" type="email" placeholder="User name" name="web">
+                   <input formControlName="email"  id="name" class="web form-control" type="email" placeholder="User name" name="web">
  
-                    <div *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid" class="alert alert-warning alert-dismissible fade show" role="alert" >
-                      Please enter valid Email
-                    </div>
+
                    
                 </div>
                 <div class="section-field mb-20">
                  <label class="mb-10" for="Password">Password* </label>
                    <input formControlName="password"  id="Password" class="Password form-control" type="password" placeholder="Password" name="Password">
                 </div>
-                <button [disabled] ="loginForm.invalid" (click)="go()" class="button">
+                <button  class="button" (click)="loginClick()">
                    
                     <span>Log in</span>
                     <i class="fa fa-check"></i>

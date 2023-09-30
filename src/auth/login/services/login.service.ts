@@ -1,13 +1,22 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
 
-  constructor(private http:HttpClient ) { }
-  login(model:any){
-    return this.http.post('https://stating-api.ranachat.com/auth/public/login',model)
+export class LoginService {
+  constructor(private cc:HttpClient ){
+
+     
   }
+  doLogin(model:any){
+    return this.cc.post('https://stating-api.ranachat.com/auth/public/login',model);
+  
+  }
+  doLogout(){
+    localStorage.removeItem('token')
+  }
+
 }

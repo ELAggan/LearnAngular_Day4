@@ -14,7 +14,7 @@ export class AllInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     const newreq = request.clone({
-      headers:request.headers.append('Authorization','bearer'+localStorage.getItem('token'))
+      headers:request.headers.append('Authorization','Bearer '+localStorage.getItem('token'))
     })
     return next.handle(newreq);
   }
